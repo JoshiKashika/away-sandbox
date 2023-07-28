@@ -1,0 +1,14 @@
+{
+  "sdkVersion": "1.14", // The version of the Answers SDK to use
+  "apiKey": "b10a414eaa1b6cfa1c0bac3062eec0e2", // The answers api key found on the experiences page. This will be provided automatically by the Yext CI system
+  "environment": "production", // The environment to run on for this Answers Experience. (i.e. 'production' or 'sandbox')
+   "businessId": "3834851", // The business ID of the account. This will be provided automatically by the Yext CI system
+  "sessionTrackingEnabled": true, // Whether or not session tracking is enabled for all pages
+  "analyticsEventsEnabled": true, // Whether or not to submit user interaction analytics events
+  "logo": "", // The link to the logo for open graph meta tag - og:image.
+  "favicon": "https://awrwebsauksprod.blob.core.windows.net/assets/static/dist/img/favicons/apple-touch-icon.png",
+  "googleTagManagerName": "dataLayer", // The name of your Google Tag Manager data layer
+  "googleTagManagerId": "", // The container id associated with your Google Tag Manager container
+  "googleAnalyticsId": "", // The tracking Id associated with your Google Analytics account
+  "conversionTrackingEnabled": true // Whether or not conversion tracking is enabled for all pages
+}

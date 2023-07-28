@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Away Resorts - Find Best Offers on Resorts & Holiday Homes", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
+  "metaDescription": "Find the answers of your queries about holiday parks, resorts & holiday homes. Get the best deals on resorts booking ", // The meta tag for open graph description
+   "canonicalUrl": "https://help.awayresorts.co.uk", // The link tag for canonical URL as well as the meta tag for open graph url
+    "pageSettings": {
+        "search": {
+          "defaultInitialSearch": "" // Enter a default search term, should be your pinned query
+          }
+      },
+  "componentSettings": {
+    "QASubmission": {
+      "entityId": "away", // Set the ID of the entity to use for Q&A submissions, must be of entity type "Organization"
+      "privacyPolicyUrl": "https://www.awayresorts.co.uk/privacy-policy/" // The fully qualified URL to the privacy policy
+    },
+      "DirectAnswer": {
+      "types": {
+        "FEATURED_SNIPPET": {
+          "cardType": "documentsearch-standard"
+        },
+        "FIELD_VALUE": {
+          "cardType": "directanswer"
+        }
+      }
+    },
+    "SearchBar": {
+      "placeholderText": "Search Your Query Here", // The placeholder text in the answers search bar
+      "allowEmptySearch": true, // Allows users to submit an empty search in the searchbar
+      "loadingIndicator": {
+        "display": true //Optional, whether to include a loading indicator on seachbar
+      },
+      "voiceSearch": {
+        "enabled": false // Whether or not voice search is enabled
+      }
+    }
+  },
+  "verticalsToConfig": {
+    "Universal": {
+      "isFirst": "true", // Indicates that this should always appear first in the navigation bar
+      "label": "All" // The name of the universal tab in the navigation bar
+    }
+  }
+}

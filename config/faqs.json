@@ -1,0 +1,59 @@
+{
+  "verticalKey": "faqs", // The vertical key from your search configuration
+  "pageTitle": "Away Resorts - Find FAQs of Resorts & Holiday Homes", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
+  "metaDescription": "Find the answers of your queries about holiday parks, resorts & holiday homes. Get the best deals on resorts booking ", // The meta tag for open graph description
+   "canonicalUrl": "https://help.awayresorts.co.uk/faqs.html", // The link tag for canonical URL as well as the meta tag for open graph url
+  "pageSettings": {
+    "search": {
+      "verticalKey": "faqs", // The vertical key from your search configuration
+      "defaultInitialSearch": "" // Enter a default search term
+    }
+  },
+  "componentSettings": {
+    "Facets": {
+      "expand": false, // Allow the user to expand and collapse the facets
+      "showMore": false, // Display a link to see more facet options within a facet
+      "searchOnChange": true, // Will automatically run a search as facets are selected or unselected. Set to false to only trigger updates with an Apply button. 
+      "fields": {
+        "c_filterByLocation.name": {
+            "label": "Filter By Location",
+              "optionsOrder": "ASC"
+        }
+	    }	
+    },
+   "AppliedFilters": {
+      "removable": true
+    },
+    "VerticalResults": {
+      "noResults": {
+        "displayAllResults": true // Optional, whether to display all results in the vertical when no results are found.
+      },
+      "hideResultsHeader": true
+    },
+    "SearchBar": {
+      "placeholderText": "Frequently Asked Questions", // The placeholder text in the answers search bar
+      "allowEmptySearch": true, // Allows users to submit an empty search in the searchbar
+      "loadingIndicator": {
+        "display": true //Optional, whether to include a loading indicator on seachbar
+      },
+      "voiceSearch": {
+        "enabled": false // Whether or not voice search is enabled
+      }
+    },
+    "Pagination": {
+      "noResults": {
+        "visible": true
+      }
+    }
+  },
+  "verticalsToConfig": {
+    "faqs": { // The vertical key from your search configuration
+       "label": "FAQS", // The name of the vertical in the section header and the navigation bar
+      "verticalLimit": 9, // The result count limit for vertical search
+      "universalLimit": 5, // The result count limit for universal search
+      "cardType": "faqcards", // The name of the card to use - e.g. accordion, location, customcard 
+       "icon": "static/assets/images/faq.webp", // The icon to use on the card for this vertical
+      "universalSectionTemplate": "standard"
+    }
+  }
+}

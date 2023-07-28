@@ -1,0 +1,95 @@
+<div class="HitchhikerFaqAccordion yxt-{{cardName}} js-HitchhikerFaqAccordion{{#if card.isExpanded}} HitchhikerFaqAccordion--expanded{{/if}}"
+     id="{{id}}">
+  <button class="HitchhikerFaqAccordion-toggle js-HitchhikerFaqAccordion-toggle"
+    aria-expanded="{{#if card.isExpanded}}true{{else}}false{{/if}}"
+    aria-controls="{{id}}"
+    tabindex="0">
+    <h3 class="HitchhikerFaqAccordion-title">
+      {{{card.title}}}
+    </h3>
+    <div class="HitchhikerFaqAccordion-icon js-HitchhikerFaqAccordion-icon{{#if card.isExpanded}} HitchhikerFaqAccordion-icon--expanded{{/if}}">
+      {{> icons/builtInIcon iconName='chevron' }}
+    </div>
+  </button>
+  <div class="HitchhikerFaqAccordion-content js-HitchhikerFaqAccordion-content"
+       aria-hidden="{{#if card.isExpanded}}false{{else}}true{{/if}}">
+    {{#if card.subtitle}}
+      <div class="HitchhikerFaqAccordion-subtitle">
+        {{{card.subtitle}}}
+      </div>
+    {{/if}}
+    {{> 'details'}}
+    {{#if (any (all card.CTA1 card.CTA1.url card.CTA1.label) (all card.CTA2 card.CTA2.url card.CTA2.label))}}
+      <div class="HitchhikerFaqAccordion-ctasWrapper">
+        {{#if card.CTA1.url}}
+        <div class="HitchhikerFaqAccordion-primaryCTA">
+          {{#with card.CTA1}}
+            {{> CTA }}
+          {{/with}}
+        </div>
+        {{/if}}
+        {{#if card.CTA2.url}}
+        <div class="HitchhikerFaqAccordion-secondaryCTA">
+          {{#with card.CTA2}}
+            {{> CTA }}
+          {{/with}}
+        </div>
+        {{/if}}
+      </div>
+    {{/if}}
+    {{> thumbsfeedback card feedbackSubmitted=feedbackSubmitted}}
+  </div>
+</div>
+{{#*inline 'details'}}
+{{#if card.details}}
+<div class="HitchhikerFaqAccordion-details">
+  {{#if showExcessDetailsToggle}}
+    <div class="HitchhikerFaqAccordion-detailsText js-HitchhikerFaqAccordion-detailsText">
+      {{{truncatedDetails}}}
+    </div>
+  {{/if}}
+  <div class="HitchhikerFaqAccordion-detailsText js-HitchhikerFaqAccordion-detailsText{{#if showExcessDetailsToggle}} js-hidden{{/if}}">
+    {{{card.details}}}
+  </div>
+  {{#if showExcessDetailsToggle}}
+  <button class="HitchhikerCard-detailsToggle js-HitchhikerFaqAccordion-detailsToggle">
+    {{card.showMoreDetails.showMoreText}}
+    <span>
+      {{> icons/builtInIcon iconName='chevron' classNames='Icon--sm Icon--collapseDown' }}
+    </span>
+  </button>
+  <button class="HitchhikerCard-detailsToggle js-HitchhikerFaqAccordion-detailsToggle js-hidden">
+    {{card.showMoreDetails.showLessText}}
+    <span>
+      {{> icons/builtInIcon iconName='chevron' classNames='Icon--sm Icon--collapseUp' }}
+    </span>
+  </button>
+  {{/if}}
+</div>
+{{/if}}
+{{/inline}}
+{{#*inline 'CTA'}}
+<a class="HitchhikerCTA js-HitchhikerCTA{{#if modifiers}} {{modifiers}}{{/if}}"
+   href="{{#unless (isNonRelativeUrl url)}}{{@root.relativePath}}/{{/unless}}{{url}}"
+   data-eventtype="{{eventType}}"
+   data-eventoptions='{{json eventOptions}}'
+   target={{#if target}}"{{target}}"{{else}}"_top"{{/if}}
+   {{#if ariaLabel}}aria-label="{{ariaLabel}}"{{/if}}>
+  {{#if (any iconName iconUrl)}}
+  <div class="HitchhikerCTA-iconWrapper">
+    <div class="HitchhikerCTA-icon">
+      {{> icons/iconPartial
+          iconName=iconName
+          iconUrl=(relativePathHandler url=iconUrl relativePath=@root.relativePath)
+      }}
+    </div>
+  </div>
+  {{/if}}
+  <div class='HitchhikerCTA-iconLabel'>
+    {{label}}
+  </div>
+    <svg class="icon-arrow">
+	<path d="M.305 1.826l4.194 5.992L.305 13.81c-.445.636.421 1.363.97.814l6.357-6.357a.636.636 0 000-.898L1.275 1.012c-.549-.55-1.415.178-.97.814z"></path>
+</svg>
+</a>
+{{/inline}}

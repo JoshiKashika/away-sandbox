@@ -1,0 +1,642 @@
+
+
+
+body{ font-family: 'Jubilat'; font-weight: 600; }
+
+.Answers-nav{padding-top: 18px;}
+.Answers-nav .yxt-Nav-container .yxt-Nav-item{  font-family: 'Jubilat'; font-weight: 500;}
+
+.Answers-navWrapper {
+    padding-top: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.Answers-nav .yxt-Nav-container .yxt-Nav-item.is-active {
+    border-bottom-color: #3CC0C8;
+    border-bottom-width: 4px;
+    color: #3CC0C8;
+    cursor: default;
+    pointer-events: none;
+}
+
+.yxt-Nav-item:hover{color: #3CC0C8; }
+.Answers-nav .yxt-Nav-container {
+    border-bottom: none;
+}
+/*.Answers-resultsWrapper { max-width: 100%; width: 100%!important;  background-color: #EBF8F9;}*/
+.site-logo {
+    position: absolute;
+    top: 18px;
+    left: 60px;
+    z-index: 999;
+}
+.site-logo svg{
+    width: 130px;
+    height: auto;
+}
+.site-logo img {
+    height: auto;
+    width: auto;
+}
+.site-logo.mobile-logo{
+    display: none;
+}
+@media only screen and (max-width: 1500px){
+  .site-logo {
+      left: 20px;
+      width: 130px;
+  }
+}
+
+@media only screen and (max-width: 1365px){
+  .site-logo {
+      position: static;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      width: 100%;
+      text-align: center;
+      padding-top: 15px;
+  }
+  .Answers-navWrapper{
+      padding-top: 10px;
+  }
+  .site-logo.mobile-logo{
+    display: block !important;
+  }
+  .Answers-navWrapper .site-logo{
+    display: none;
+  }
+}
+
+.yxt-Results--searchComplete .HitchhikerAllFieldsStandard-title {  background: #EBF8F9;    color: #fff;}
+.yxt-Results--searchComplete .HitchhikerAllFieldsStandard-title h2 {     color: #00737A; font-family: 'Jubilat';  font-size:22px;  font-weight:600;   }
+.yxt-Results--searchComplete .HitchhikerAllFieldsStandard-column .c-AddressRow{ font-size: 16px;font-weight:400;}
+.yxt-Results--searchComplete .HitchhikerAllFieldsStandard-column .HitchhikerAllFieldsStandard-fieldValueLink{ font-size: 16px; color:#212121; font-weight:400;}
+
+// .locations-card .HitchhikerLocationStandard-content{ padding-left:28px;}
+.locations-card:hover {  background: #EBF8F9;}
+
+.HitchhikerResultsStandard-title, .HitchhikerResultsGridThreeColumns-title {  background: #fff;    color: #fff;}
+.HitchhikerResultsGridThreeColumns-titleLabel, .HitchhikerResultsStandard-titleLabel, .HitchhikerResultsStandard-title {color: #3CC0C8; font-family: 'Jubilat';  font-weight:600;   }
+.HitchhikerResultsGridThreeColumns-viewMore .HitchhikerResultsGridThreeColumns-viewMoreLink {    background-color: transparent;    color: #2E434E;    border-radius: 0;    width: 100%;    padding: 10px 20px;}
+.HitchhikerResultsGridThreeColumns-viewMore .HitchhikerResultsGridThreeColumns-viewMoreLink .HitchhikerResultsGridThreeColumns-viewMoreLabel, .HitchhikerResultsStandard-viewMoreLabel {  color: #2E434E;   font-weight: 500;}
+.HitchhikerResultsGridThreeColumns-viewMore .HitchhikerResultsGridThreeColumns-viewMoreLink svg, .HitchhikerResultsStandard-viewMoreLabel svg, .HitchhikerResultsStandard-viewMore svg {    color: #2E434E;}
+.HitchhikerResultsStandard-viewMoreLink:hover, .HitchhikerResultsStandard-viewMoreLink:focus, .HitchhikerResultsStandard-viewMoreLink:active{color: #2E434E;}
+
+// .HitchhikerResultsGridThreeColumns--ways_to_stay .HitchhikerResultsGridThreeColumns-Card--universal{ border: none;}
+// .HitchhikerResultsGridThreeColumns--awayresorts_offers .HitchhikerResultsGridThreeColumns-Card--universal{ border: none;}
+// .HitchhikerResultsGridThreeColumns--holiday_homes .HitchhikerResultsGridThreeColumns-Card--universal{ border: none;}
+
+
+.holiyday-sec{font-family: 'Jubilat';  }
+.holiyday-sec .HitchhikerProductProminentImage-title{color:#3CC0C8; font-family: 'Jubilat';  font-weight: 600;}
+.holiyday-sec.AnswersVerticalGrid .Hitchhiker-3-columns .yxt-Card .yxt-Card-child { border: none;}
+
+ .holicard{ box-shadow: 1px 6px 8px #ededed;}
+ .holicard:hover{background:#EBF8F9;}
+ .holicard .HitchhikerProductProminentImage-title{color:#3CC0C8; font-family: 'Jubilat';  font-weight: 600;}
+ .holicard .HitchhikerJobStandard-title {    color: #2c2e3a;    font-weight: 500;    font-size: 1.5rem;}
+ .holicard .HitchhikerProductProminentImage-imgWrapper { background-color: #f2f2f2;    width: 90%;  height: 0;    display: flex;    align-items: center;    justify-content: center;    border-radius: 10px;    margin:20px auto 10px;    padding: 57% 0 0;    position: relative;    overflow: hidden;    box-shadow: 0 6px 15px #00000026;}
+ .holicard .HitchhikerProductProminentImage-body {    text-align: left;    padding-left: 20px;    padding-right: 20px;   padding-bottom: 25px;}
+ .holicard .HitchhikerProductProminentImage-imgWrapper img { position: absolute;    top: 0;  left: 0;    width: 100%;  height: 100%;  object-fit: cover;     background: #f5f5f5;  transition: all .4s;     z-index: 1;}
+ .holicard .HitchhikerProductProminentImage-imgWrapper:hover img { transform: scale(1.1);}
+ .holicard .HitchhikerProductProminentImage-cardDetails{font-family: 'Jubilat'; font-weight: 500; }
+ .holicard .HitchhikerProductProminentImage-cardDetails .HitchhikerProductProminentImage-detailsText{ color: #00737A;}
+ .holicard .HitchhikerMenuItemStandard-ctasWrapper { justify-content: flex-start;}
+ .holicard .HitchhikerMenuItemStandard-primaryCTA {  margin-left: 0;}
+ .holicard a.HitchhikerCTA.js-HitchhikerCTA {  color: #fff; font-family: 'Jubilat';  font-weight:400;   background: #00737A;  display: flex;  align-items: center;  text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 1rem;  border-radius: 30px;}
+ .holicard a.HitchhikerCTA.js-HitchhikerCTA:hover{ text-decoration: none; background: #3CC0C8;}
+
+
+
+.offers-sec{font-family: 'Jubilat';  }
+.offers-sec .HitchhikerProductProminentImage-title{color:#3CC0C8; font-family: 'Jubilat';  font-weight: 600;}
+.offers-sec.AnswersVerticalGrid .Hitchhiker-3-columns .yxt-Card .yxt-Card-child { border: none;}
+ .offercard .HitchhikerProductProminentImage-title{color:#00737A; font-family: 'Jubilat';  font-weight: 600;}
+ .offercard{ box-shadow: 1px 6px 8px #ededed;}
+ .Answers-verticalResults .offercard{border: 1px solid #d8d8d8;}
+ .offercard:hover{background:#EBF8F9;}
+ .offercard .HitchhikerJobStandard-title {    color: #2c2e3a;    font-weight: 500;    font-size: 1.5rem;}
+ .offercard .HitchhikerProductProminentImage-imgWrapper { background-color: #f2f2f2;    width: 90%;  height: 0;    display: flex;    align-items: center;    justify-content: center;    border-radius: 10px;    margin:20px auto 10px;    padding: 57% 0 0;    position: relative;    overflow: hidden;    box-shadow: 0 6px 15px #00000026;}
+ .offercard .HitchhikerProductProminentImage-body {    text-align: left;    padding-left: 20px;    padding-right: 20px;   padding-bottom: 25px;}
+ .offercard .HitchhikerProductProminentImage-imgWrapper img { position: absolute;    top: 0;  left: 0;    width: 100%;  height: 100%;  object-fit: cover;     background: #f5f5f5;  transition: all .4s;     z-index: 1;}
+ .offercard .HitchhikerProductProminentImage-imgWrapper:hover img { transform: scale(1.1);}
+ .offercard .HitchhikerProductProminentImage-cardDetails{font-family: 'Jubilat'; font-weight: normal; }
+ .offercard .HitchhikerProductProminentImage-cardDetails .HitchhikerProductProminentImage-detailsText{ color: #212121;}
+ .offercard .HitchhikerMenuItemStandard-ctasWrapper { justify-content: flex-start;}
+ .offercard .HitchhikerMenuItemStandard-primaryCTA {  margin-left: 0;}
+ .offercard a.HitchhikerCTA.js-HitchhikerCTA {  color: #fff; font-family: 'Jubilat';  font-weight:500; background: #00737a;  display: flex;  align-items: center;  text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 1rem;  border-radius: 0; letter-spacing: 0.25px;}
+ .offercard a.HitchhikerCTA.js-HitchhikerCTA:hover{ text-decoration: none; background: #00393d;}
+ .offercard a.HitchhikerCTA.js-HitchhikerCTA .HitchhikerCTA-iconLabel{border-bottom: 1px solid transparent;
+    margin-top: -1px;
+    transition: border-color .3s ease-in-out;}
+    .offercard a.HitchhikerCTA.js-HitchhikerCTA:hover .HitchhikerCTA-iconLabel{border-color: #3cc0c8;}
+a.HitchhikerCTA.js-HitchhikerCTA svg.icon-arrow{width: 8px; height: 15px; fill: #fff; margin-left: 10px;}    
+
+.wayto-sec{font-family: 'Jubilat';  }
+.wayto-sec .HitchhikerProductProminentImage-title{color:#3CC0C8; font-family: 'Jubilat';  font-weight: 600;}
+.wayto-sec.AnswersVerticalGrid .Hitchhiker-3-columns .yxt-Card .yxt-Card-child { border: none;}
+ .waytocard .HitchhikerProductProminentImage-title{color:#00737A; font-family: 'Jubilat';  font-weight: 600;}
+ .waytocard{ box-shadow: 1px 6px 8px #ededed;}
+ .waytocard:hover{background:#EBF8F9;}
+ .waytocard .HitchhikerJobStandard-title {    color: #2c2e3a;    font-weight: 500;    font-size: 1.5rem;}
+ .waytocard .HitchhikerProductProminentImage-imgWrapper { background-color: #f2f2f2;    width: 90%;  height: 0;    display: flex;    align-items: center;    justify-content: center;    border-radius: 10px;    margin:20px auto 10px;    padding: 57% 0 0;    position: relative;    overflow: hidden;    box-shadow: 0 6px 15px #00000026;}
+ .waytocard .HitchhikerProductProminentImage-body {    text-align: left;    padding-left: 20px;    padding-right: 20px;   padding-bottom: 25px;}
+ .waytocard .HitchhikerProductProminentImage-imgWrapper img { position: absolute;    top: 0;  left: 0;    width: 100%;  height: 100%;  object-fit: cover;     background: #f5f5f5;  transition: all .4s;     z-index: 1;}
+ .waytocard .HitchhikerProductProminentImage-imgWrapper:hover img { transform: scale(1.1);}
+ .waytocard .HitchhikerProductProminentImage-cardDetails{font-family: 'Jubilat'; font-weight: normal; }
+ .waytocard .HitchhikerProductProminentImage-cardDetails .HitchhikerProductProminentImage-detailsText{ color: #212121;}
+ .waytocard .HitchhikerMenuItemStandard-ctasWrapper { justify-content: flex-start;}
+ .waytocard .HitchhikerMenuItemStandard-primaryCTA {  margin-left: 0;}
+ .waytocard a.HitchhikerCTA.js-HitchhikerCTA {  color: #fff; font-family: 'Jubilat';  font-weight:500; letter-spacing: 0.25px;  background: #00737a;  display: flex;  align-items: center;  text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 1rem; border-radius: 0; }
+ .waytocard a.HitchhikerCTA.js-HitchhikerCTA:hover{ text-decoration: none; background: #00393d;}
+
+ .waytocard a.HitchhikerCTA.js-HitchhikerCTA .HitchhikerCTA-iconLabel{border-bottom: 1px solid transparent;
+    margin-top: -1px;
+    transition: border-color .3s ease-in-out;}
+.waytocard a.HitchhikerCTA.js-HitchhikerCTA:hover .HitchhikerCTA-iconLabel{border-color: #3cc0c8;}
+//.waytocard a.HitchhikerCTA.js-HitchhikerCTA svg.icon-arrow{width: 8px; height: 15px; fill: #fff; margin-left: 10px;}
+
+.yxt-Results--faqs .yxt-Results-items .yxt-Card { border-top: 1px solid #d8d8d8!important;    margin-bottom: 10px!important;    margin-top: 10px;}
+.yxt-Results--faqs .yxt-Results-items .yxt-Card {border-radius: 5px;}
+.HitchhikerFaqAccordion-toggle h3{font-family: 'Jubilat';  font-weight:600;  }
+.HitchhikerFaqAccordion-detailsText p{font-family: 'Jubilat'; color: #212121;  font-weight:normal;  }
+.HitchhikerFaqAccordion-detailsText li{font-family: 'Jubilat'; color: #212121;  font-weight:normal;  }
+.HitchhikerFaqAccordion-details a{ font-weight:600;color: #00737A;}
+.HitchhikerFaqAccordion{ background-color: transparent;}
+.HitchhikerFaqAccordion:hover, .HitchhikerFaqAccordion:focus{ background-color: transparent;}
+.HitchhikerFaqAccordion-title{color:#00737A; }
+.HitchhikerFaqAccordion {border: 1px solid #fff;    border-radius: 5px;}
+.HitchhikerFaqAccordion.HitchhikerFaqAccordion--expanded {  border-color: #3CC0C8;    border-bottom-width: 5px;}
+.HitchhikerFaqAccordion-toggle svg{color: #00737A;}
+
+ .HitchhikerFaqAccordion-ctasWrapper a.HitchhikerCTA.js-HitchhikerCTA {  color: #fff; font-family: 'Jubilat';  font-weight:400;   background: #00737a;  display: flex;  align-items: center;  text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 1rem;  border-radius: 0;}
+ .HitchhikerFaqAccordion-ctasWrapper a.HitchhikerCTA.js-HitchhikerCTA:hover{ text-decoration: none; background: #00393d;}
+ .HitchhikerFaqAccordion-ctasWrapper a.HitchhikerCTA.js-HitchhikerCTA .HitchhikerCTA-iconLabel{border-bottom: 1px solid transparent;
+    margin-top: -1px;
+    transition: border-color .3s ease-in-out;}
+    .HitchhikerFaqAccordion-ctasWrapper a.HitchhikerCTA.js-HitchhikerCTA:hover .HitchhikerCTA-iconLabel{border-color: #3cc0c8;  white-space: normal; }
+
+.yxt-Results--faqs .HitchhikerCTA {    color: #fff;    font-family: "Jubilat";    font-weight: 400;    background: #00737A;    display: flex;    align-items: center;    text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 1rem;    border-radius: 30px;}
+.yxt-Results--faqs .HitchhikerCTA:hover {    text-decoration: none;    background: #3CC0C8;}
+
+.HitchhikerFaqAccordion-toggle:hover, .HitchhikerFaqAccordion-toggle:focus{background: none;}
+
+
+
+
+.holiyday-sec .yxt-FilterOptions-legendLabel .yxt-FilterOptions-label { width: 100%;  color: #00737A;}
+
+.holiyday-sec .Answers-results.js-answersResults > ul {    display: -webkit-box;      justify-content: flex-end;   display: -ms-flexbox;    display: flex;}
+.holiyday-sec .Answers-results.js-answersResults > ul li {    margin: 0 6px 10px;}
+.holiyday-sec .Answers-results.js-answersResults > ul a {    color: #00737A;    font-family: "Jubilat";    font-weight: 400;    border:1px solid #00737A;    display: flex;    align-items: center;    text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 1rem; text-align: center; }
+.holiyday-sec .Answers-results.js-answersResults > ul a:hover {  color: #fff;   text-decoration: none;    background: #00393d; border-color: #00393d;}
+
+
+
+// .holiyday-sec .Answers-resultsWrapper{ flex-direction: column; }
+
+.ownership .HitchhikerProductProminentImage-cardDetails .HitchhikerProductProminentImage-detailsText{font-weight: normal;}
+.ownership .HitchhikerProductProminentImage-subtitle{  font-family: 'Jubilat';  font-weight: 500; color: #00737A; margin-bottom: 10px;}
+.ownership .HitchhikerProductProminentImage-price{color: #00737A;  font-family: 'Jubilat';  font-weight: 500; }
+
+
+.all-sec-res .HitchhikerResultsGridThreeColumns-title .Icon--custom {  background: #3CC0C8;    padding: 8px;    border-radius: 30px;}
+.all-sec-res .HitchhikerResultsStandard-title .Icon--custom {  background: #3CC0C8;    padding: 8px;    border-radius: 30px;}
+
+.HitchhikerLocationStandard .HitchhikerLocationStandard-title{ color: #00737A;  }
+.HitchhikerLocationStandard .HitchhikerLocationStandard-ordinal{ background: none !important; font-weight: 600; font-size: 18px; color: #00737A; margin-right: 7px; margin-top: 3px; }
+.HitchhikerLocationStandard .HitchhikerLocationStandard-ordinal:after{content: '.';}
+
+//.location-standard .HitchhikerCTA {     color: #fff; font-family: 'Jubilat'; width: 100%;  font-weight:400;   background: #00737A;  display: flex;  align-items: center;  text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 1rem;  border-radius: 30px;}
+
+.HitchhikerLocationStandard  .HitchhikerCTA {    color: #00737A;      width: 100%;   font-family: "Jubilat";    font-weight: 400;    border:1px solid #00737A;    display: flex;    align-items: center;    text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 1rem; }
+.HitchhikerLocationStandard  .HitchhikerCTA:hover {  color: #fff;   text-decoration: none;    background: #3CC0C8;}
+.HitchhikerLocationStandard  .HitchhikerLocationStandard-ordinal {
+    background: #00737a;
+    border: none;
+}
+
+.HitchhikerLocationStandard-address{position: relative; padding-left: 32px; margin-bottom: 10px;}
+.HitchhikerLocationStandard-address:before{position: absolute; top: 0; left: 0; background: #00737A; content: ''; width: 26px; height: 26px; border-radius: 20px;}
+.HitchhikerLocationStandard-address > svg{position: absolute; top: 0; left: 0; width: 26px;
+    height: 26px;
+    padding: 5px;}
+
+.HitchhikerLocationStandard-phone{font-weight: normal;}
+
+.HitchhikerLocationStandard-phone .HitchhikerLocationStandard-phone--desktop{position: relative; padding-left: 32px; line-height: 32px;}
+
+.HitchhikerLocationStandard-phone .HitchhikerLocationStandard-phone--desktop:before{position: absolute; top: 3px; left: 0; background: #00737A; content: ''; width: 26px; height: 26px; border-radius: 20px;}
+.HitchhikerLocationStandard-phone .HitchhikerLocationStandard-phone--desktop > svg{position: absolute; top: 3px; left: 0; width: 26px;
+    height: 26px;
+    padding: 5px;}
+
+.HitchhikerLocationStandard-phone .HitchhikerLocationStandard-phone--desktop a{border-bottom: 1px solid transparent;
+    transition: border-color .3s ease-in-out; line-height: 20px; padding-top: 6px;}
+.HitchhikerLocationStandard-phone .HitchhikerLocationStandard-phone--desktop a:hover{border-color: #00393d;}    
+
+.HitchhikerLocationStandard-core{width: 100%; max-width: 400px;}
+.HitchhikerLocationStandard .HitchhikerCTA{border-radius: 0; padding: 9px 10px; background-color: #00737A; color: #fff; letter-spacing: 0.25px; font-weight: 500; }
+.HitchhikerLocationStandard .HitchhikerCTA:hover{background-color: #00393d;}
+
+.HitchhikerLocationStandard .HitchhikerCTA .HitchhikerCTA-iconLabel{border-bottom: 1px solid transparent;
+    margin-top: -1px;
+    transition: border-color .3s ease-in-out;}
+.HitchhikerLocationStandard .HitchhikerCTA:hover .HitchhikerCTA-iconLabel{border-color: #3cc0c8;}
+
+.HitchhikerLocationStandard .HitchhikerCTA-icon{height: 14px; width: 14px;}
+.HitchhikerCTA-icon .Icon svg{width: 14px; height: 14px;}
+.HitchhikerCTA-icon .Icon.Icon--chevron{margin-top: 0;}
+
+.AnswersVerticalGrid .Answers-resultsWrapper.selected-results{flex-direction: column;}
+// .AnswersVerticalStandard .Answers-resultsWrapper.selected-results{flex-direction: column;}
+.AnswersVerticalGrid .Answers-resultsWrapper.pt-0{padding-top: 0;}
+.AnswersVerticalStandard .Answers-sidebar{padding-right: 15px; min-width: 200px;}
+.yxt-FilterOptions-optionLabel:after{border-right-color: #3CC0C8; border-bottom-color: #3CC0C8;}
+.yxt-FilterOptions-checkboxInput:checked+.yxt-FilterOptions-optionLabel:before{border-color: #3CC0C8;}
+.yxt-FilterOptions-optionLabel:before{width: 0.875rem; height: 0.875rem; top: -3px;}
+.yxt-FilterOptions-optionLabel:after{width: 4px; left: -17px; top: 5px; transform: rotate(45deg);}
+.yxt-VerticalResultsCount{font-weight: normal; color: #00737A; padding-left: 3px;}
+.yxt-FilterOptions-legendLabel{border-bottom: 1px solid #00737a;  width: 100%;  color: #00737A; font-weight: normal;} 
+.yxt-AppliedFilters-removableFilterTag{background-color: #3CC0C8; color: #fff; font-style: normal;}
+.yxt-AppliedFilters-removableFilterTag:focus, .yxt-AppliedFilters-removableFilterTag:hover{background-color: #00393d;}
+.Hitchhiker-FilterLink{text-transform: capitalize; color: #3CC0C8; border-bottom: 1px solid #3cc0c8;
+    transition: border-color 0.3s ease-in-out;
+    line-height: 20px;}
+.Hitchhiker-FilterLink:hover{border-bottom-color: #00393d; text-decoration: none;}
+
+.yxt-SearchBar-buttonImage, .yxt-SearchBar-Icon--inactive{transform: rotateY(180deg); width: 24px; height: 28px;}
+
+.yxt-AlternativeVerticals-noResultsInfo{background-color: #00737a; font-size: 16px;}
+
+.yxt-QuestionSubmission-toggle{color: #00737A;}
+.yxt-QuestionSubmission-titleIconWrapper{color: #3CC0C8;}
+.yxt-QuestionSubmission-submitButton{background: #00737a; font-family: 'Jubilat'; font-weight: 500; font-size: 18px; text-transform: capitalize; border-radius: 0; position: relative; padding: 6px 20px; line-height: 26px;}
+.yxt-QuestionSubmission-submitButton:hover{background: #00393d;}
+.yxt-QuestionSubmission-submitButton:not(:disabled):focus, .yxt-QuestionSubmission-submitButton:not(:disabled):hover{background: #00393d;}
+.yxt-QuestionSubmission-toggle{width: 12px; height: 12px;}
+.yxt-QuestionSubmission-titleIconWrapper svg{width: 26px; height: 26px; }
+
+.yxt-QuestionSubmission-submitButton:after{content: ''; border-bottom: 1px solid transparent; transition: border-color 0.3s ease-in-out; position: absolute; bottom: 7px; left: 20px; right: 20px;}
+.yxt-QuestionSubmission-submitButton:hover:after{border-color: #3CC0C8;}
+
+.Hitchhiker-ViewResultsButton{background-color: #00737a !important;}
+.Hitchhiker-ViewResultsButton:hover{background-color: #00393d !important;}
+
+.AnswersVerticalMap.CollapsibleFilters .Answers-filtersWrapper{margin: 0; width: 100%; padding: 0 20px;}
+
+// fliters css
+
+.location-filters .yxt-FilterOptions-options{ display: flex; width: 100%; flex-wrap: wrap; }
+
+.location-filters .yxt-FilterOptions-options .multioption-option { width: 20%; padding-right: 10px;}
+
+.location-filters .yxt-FilterOptions-options .multioption-option .yxt-FilterOptions-optionLabel:before{ }
+
+.wts-sec .js-yext-filterbox-filter1 .yxt-FilterOptions-options{ height: 350px; overflow-y: auto;}
+.wts-sec .yxt-FilterBox-filter .yxt-FilterOptions-optionLabel {line-height: 22px; font-size: 14px;}
+
+.location-filters .yxt-FilterOptions-showToggle{ margin: 10px 5px; color: #00737A; }
+
+
+.yxt-AppliedFilters-filterSeparator{margin-top: -5px;}
+
+.AnswersVerticalMap .Answers-resultsHeader{padding-left: 15px;}
+.location-filters .yxt-FilterOptions-legendLabel{margin-bottom: 10px;}
+
+.Answers-results{width: 100%;}
+
+.yxt-FilterOptions-optionLabel--count{display: none;}
+
+.location-filters .yxt-FilterOptions-optionLabel:before{ top: -5px; }
+.location-filters .yxt-FilterOptions-optionLabel:after{top: 3px;}
+.HitchhikerCTA:hover, .HitchhikerCTA:focus, .HitchhikerCTA:active{text-decoration: none;}
+
+// This is new css
+.AnswersVerticalMap.CollapsibleFilters .yxt-FilterBox-filter{margin-top: 5px;}
+
+.tabs {    display: flex;   padding: 10px 0 0px 0;}
+
+.tabs .tablinks { text-align: left; position: relative;  padding: 8px 16px 0 0;    margin: 0;  font-family: "optimanormal"; font-size: 16px;   font-size: 16px; border-bottom: 1px solid transparent; color: #00737A;}
+.tabs .tablinks:hover{border-color: #00737A;}
+.tabs .tablinks:hover:after { width: 0;
+    content: "";
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #00737A;
+    position: absolute;
+    right: 0;
+    top: 16px;
+        }
+
+
+.tabs .tablinks:after{    width: 0;
+    content: "";
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #00737A;
+    position: absolute;
+     right: 0;
+    top: 16px;}
+.tabs .tablinks.active:after {    width: 0;
+    content: "";
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #00737A;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    transform: rotate(180deg);
+    }
+
+.tablinks.active {   -webkit-transition: opacity 0.3s linear 0s, top 0.3s linear;
+    -moz-transition: opacity 0.3s linear 0s, top 0.3s linear;
+    -ms-transition: opacity 0.3s linear 0s, top 0.3s linear;
+    -o-transition: opacity 0.3s linear 0s, top 0.3s linear;
+    transition: opacity 0.3s linear 0s, top 0.3s linear;}
+.tabs .tablinks:last-child {
+    margin-right: 0;
+}
+.wrapper_tabcontent{  padding:0; color: #212121; -webkit-transition: opacity 0.3s linear 0s, top 0.3s linear;
+    -moz-transition: opacity 0.3s linear 0s, top 0.3s linear;
+    -ms-transition: opacity 0.3s linear 0s, top 0.3s linear;
+    -o-transition: opacity 0.3s linear 0s, top 0.3s linear;
+    transition: opacity 0.3s linear 0s, top 0.3s linear;  margin: 0;}
+.innertab-content{padding-top:15px; padding-bottom:0; display: flex; flex-wrap: wrap; }
+.innertab-content li{width: 100%; padding-right: 0; margin-bottom: 5px; position: relative; padding-left: 15px;}
+.innertab-content li:before{content: ''; position: absolute; top: 8px; left: 0; width: 6px; height: 6px; background-color: #00393d; border-radius: 5px;}
+.innertab-content li strong{font-weight: 500;}   
+
+table.c-hours-details {width: 100%; font-family: "optimanormal";}
+
+.c-hours-details-row {
+    padding-top: 0px;
+    line-height: 28px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #4c8ccd;
+}
+
+.tabcontent {  display: none; }
+.tabcontent.active {  transition: all 1s ease;  display: block;}
+.tabcontent p {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+  font-weight: 100;  transition: all 1s ease;  animation: fadeEffect 0.6s ease;  width: 100%;  font-size: 16px;  font-family: "IBM Plex Sans", sans-serif;}
+
+.yxt-Pagination--hidden{display: none;}
+
+.HitchhikerLocationStandard-distance{padding-top: 4px;}
+
+.HitchhikerCard-detailsToggle:not(:disabled){display: none;}
+.yxt-FilterOptions-options{padding-right: 3px;}
+
+.yxt-Pagination{color: #00737A;}
+.yxt-Pagination-link, .yxt-Pagination-page{color: #00737A;}
+
+.yxt-Pagination-link:focus, .yxt-Pagination-link:hover{background-color: #00393d; color: #fff;}
+
+.yxt-QuestionSubmission-titleDescription{font-family: 'Jubilat';}
+.Answers-qaSubmission .yxt-QuestionSubmission-title{font-family: 'Jubilat'; font-size: 22px; font-weight: 600; color: #3CC0C8; text-transform: uppercase; }
+.yxt-QuestionSubmission{font-family: 'Jubilat'; font-weight: normal;}
+.yxt-QuestionSubmission-titleDescription, .yxt-QuestionSubmission-formRow{font-weight: normal; color: #212121;}
+.yxt-QuestionSubmission-privacyPolicy{font-weight: normal; color: #212121;}
+.Answers-qaSubmission .yxt-QuestionSubmission-titleDescription{font-weight: normal;}
+.yxt-QuestionSubmission-submitButton:not(:disabled):focus{border: 0;}
+.yxt-QuestionSubmission-submitButton:focus{padding: 6px 20px;}
+
+.HitchhikerProductProminentImage-title{line-height: 1.3;}
+.yxt-QuestionSubmission-titleBar:focus{outline: none;}
+.yxt-QuestionSubmission-titleBar[aria-expanded="false"]{border-bottom: none;}
+
+.applied-filter{display: flex; width: 100%; justify-content: flex-end; padding-left: 5px; align-items: flex-end; border-bottom: 1px solid #00737A; padding-top: 12px; padding-bottom: 0; margin-bottom: 10px;}
+.applied-filter .yxt-VerticalResultsCount{line-height: 27px;}
+
+
+.yxt-Nav-moreIcon{margin-top: -2px;}
+.yxt-AppliedFilters-removableFilterTag{white-space: normal; padding-right: 15px; text-align: left; position: relative; }
+.yxt-AppliedFilters-removableFilterTag .yxt-AppliedFilters-removableFilterX{position: absolute; top: 50%; right: 5px; transform: translateY(-50%); margin-top: -2px;}
+
+.yxt-QuestionSubmission-privacyPolicy{position: relative;}
+.yxt-QuestionSubmission-privacyPolicy .yxt-QuestionSubmission-ackCheckboxInput{height: 0;
+    margin: 0;
+    opacity: 0;
+    width: 0;
+    position: absolute;
+}
+.yxt-QuestionSubmission-privacyPolicy .yxt-QuestionSubmission-ackCheckboxInput + span label{
+    padding-left: 20px;
+    position: relative;
+}
+.yxt-QuestionSubmission-privacyPolicy .yxt-QuestionSubmission-ackCheckboxInput + span label:before{
+    border: 0.0625rem solid var(--yxt-color-borders);
+    border-radius: 0.125rem;
+    bottom: 50%;
+    content: "";
+    left: 0;
+    position: absolute;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    width: 0.875rem;
+    height: 0.875rem;
+    top: -5px;
+    background-color: #fff;
+}
+.yxt-QuestionSubmission-privacyPolicy .yxt-QuestionSubmission-ackCheckboxInput + span label:after{
+    border-bottom: 0.0625rem solid;
+    border-right: 0.0625rem solid;
+    border-right-color: #3CC0C8;
+    border-bottom-color: #3CC0C8;
+    content: none;
+    height: 0.5625rem;
+    position: absolute;
+    top: calc(50% - 0.1875rem);
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+    width: 4px;
+    left: 5px;
+    top: 3px;
+    transform: rotate(45deg);
+    
+}
+.yxt-QuestionSubmission-privacyPolicy .yxt-QuestionSubmission-ackCheckboxInput:checked + span label:after{
+    content: "";
+}
+.yxt-QuestionSubmission-privacyPolicy .yxt-QuestionSubmission-ackCheckboxInput:checked + span label:before{
+    border-color: #3cc0c8;
+}
+
+.HitchhikerFaqAccordion-detailsText a:focus{
+    background-color: transparent;
+    border-radius: 0;
+}
+.HitchhikerLocationStandard-titleLink, .HitchhikerLocationStandard-titleLink:hover{color: #00737A;}
+
+
+.HitchhikerFaqAccordion .HitchhikerCTA-iconLabel{ white-space: normal;}
+
+@media screen and (min-width: 768px){
+    .AnswersVerticalMap .Answers-resultsColumn{height: 100%; max-height: calc(100vh - 120px);}
+    .AnswersVerticalMap .Answers-map{min-height: calc(100vh - 120px);}
+
+    .location-filters .yxt-FilterOptions-option.hidden{display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;}
+    .location-filters .yxt-FilterOptions-showToggle{display: none;}
+    .location-filters .yxt-FilterOptions-container{padding-bottom: 10px;}
+
+}
+
+
+@media only screen and (min-width:1280px){
+.AnswersVerticalGrid .Answers-filtersWrapper{margin-left: -224px; max-width: 200px;}
+.AnswersVerticalStandard .Answers-sidebar{margin-left: -200px; max-width: 200px;}
+.Answers-resultsHeader{padding-left: 0;}
+
+.AnswersVerticalMap .Answers-resultsColumn{ width: 620px;}
+.AnswersVerticalMap .Answers-map{width: calc(100% - 620px);}
+
+.AnswersVerticalGrid .Answers-resultsWrapper.pt-0{align-items: flex-start;}
+.AnswersVerticalGrid .Answers-filtersWrapper{position: sticky; top: 115px;}
+
+.AnswersVerticalStandard.CollapsibleFilters .yxt-FilterOptions-options, .AnswersVerticalGrid.CollapsibleFilters .yxt-FilterOptions-options{max-height: 500px; padding-right: 7px;}
+
+
+
+}
+@media only screen and (max-width:1199px){
+    .AnswersVerticalMap .HitchhikerLocationStandard-ctasWrapper{display: flex; justify-content: flex-start;}
+    .AnswersVerticalMap .HitchhikerLocationStandard-primaryCTA, .AnswersVerticalMap .HitchhikerLocationStandard-secondaryCTA{width: auto;}
+    .AnswersVerticalMap .HitchhikerLocationStandard-primaryCTA{margin-right: 10px;}
+    .AnswersVerticalMap .HitchhikerLocationStandard-primaryCTA .HitchhikerCTA-icon .Icon.Icon--chevron{margin-top: 0;}
+    .AnswersVerticalMap .HitchhikerLocationStandard .HitchhikerCTA{padding: 9px 15px;}
+}
+@media only screen and (max-width:1024px){
+    .AnswersUniversalStandard .Answers-resultsWrapper{padding: 0 15px;}
+    .Answers-search.js-answersSearch{padding: 0 15px;}
+    .Answers-nav .yxt-Nav-container .yxt-Nav-item{font-size: 14px; padding-left: 8px; padding-right: 8px;}
+
+    .faqs-sec.AnswersVerticalStandard .Answers-resultsWrapper{padding: 0 15px;}
+
+    .holiyday-sec .Answers-results.js-answersResults > ul{flex-wrap: wrap; justify-content: flex-start; padding: 0 9px;}
+    .holiyday-sec .Answers-results.js-answersResults > ul a{padding: 7px 5px; font-size: 0.875rem;}
+
+    .faqs-sec.AnswersVerticalStandard .Answers-resultsWrapper{flex-direction: column;}
+
+    .AnswersVerticalGrid .Answers-resultsWrapper.selected-results{padding-left: 15px; padding-right: 15px;}
+
+
+    .Answers-verticalResultsCount{padding: 0 15px; margin-right: 0;}
+
+    .Answers-resultsHeader{padding-left: 0;}
+
+    .AnswersVerticalMap .Answers-resultsHeader{padding-left: 0;}
+
+    .Answers-appliedFilters{padding: 0 15px;}
+    .applied-filter .Answers-verticalResultsCount{padding-left: 0; padding-right: 0;}
+
+    .applied-filter{width: calc(100% - 30px); margin-left: auto; margin-right: auto;}
+    .applied-filter.w-full{width: 100%;}
+
+    
+.faqs-sec .yxt-FilterBox-filter .yxt-FilterOptions-options{  max-height: 250px!important; height: 100%; overflow-y: auto;}
+
+
+}
+@media only screen and (max-width:1279px){
+
+    .AnswersVerticalGrid .Answers-resultsWrapper{flex-direction: column;}
+
+    .AnswersVerticalGrid .Answers-resultsWrapper.selected-results{padding-bottom: 10px;}
+
+    .location-filters .yxt-FilterOptions-options .multioption-option{width: 33.33%;}
+
+    .AnswersVerticalStandard.CollapsibleFilters .Answers-viewResultsButton, .AnswersVerticalGrid.CollapsibleFilters .Answers-viewResultsButton{padding-bottom: 20px;}
+
+    .Answers.CollapsibleFilters--expanded{min-height: 0;}
+
+    .AnswersVerticalStandard.CollapsibleFilters .Answers-filterLink, .AnswersVerticalGrid.CollapsibleFilters .Answers-filterLink{margin-right: auto; margin-left: 0; padding-bottom: 5px;}
+    .Answers-filterLink .Hitchhiker-FilterLink{font-weight: 600;}
+    .applied-filter.nextDiv ~ .Answers-appliedFilters{padding: 0;}      
+
+
+}
+
+@media only screen and (max-width:767px){
+    .HitchhikerLocationStandard-phone--desktop{display: flex;}
+    .HitchhikerLocationStandard-phone--mobile{display: none;}
+
+    .location-filters .yxt-FilterOptions-options .multioption-option{width: 50%;}
+
+    .HitchhikerLocationStandard{padding: 15px;}
+    .HitchhikerLocationStandard-ordinal{margin-right: 5px; margin-top: 2px;}
+    .HitchhikerLocationStandard-title{font-size: 20px; line-height: 1.3;}
+    .HitchhikerLocationStandard-distance{font-size: 14px; padding-top: 5px;}
+    // .locations-card .HitchhikerLocationStandard-content{padding-left: 12px;}
+    .HitchhikerLocationStandard .HitchhikerLocationStandard-ordinal{margin-right: 3px; margin-left: -10px;}
+
+    .innertab-content li{width: 100%;}
+
+    .Answers-search .yxt-SearchBar-input{font-size: 16px;}
+
+    // .Answers-resultsHeader{flex-wrap: wrap;}
+    // .yxt-AppliedFilters{padding: 0 15px; width: 100%;}
+
+    .yxt-QuestionSubmission-acknowledgement, .yxt-QuestionSubmission-acknowledgementBar{flex-wrap: wrap;}
+    .yxt-QuestionSubmission-submitButton:not(:disabled){margin: 10px auto 0;}
+    .yxt-QuestionSubmission-privacyPolicy{width: 100%; margin-right: 0;}
+
+    .HitchhikerResultsStandard-title{padding: 10px;}
+    .HitchhikerLocationStandard{padding: 10px;}
+    .HitchhikerResultsGridThreeColumns-title{padding: 10px;}
+
+    .HitchhikerProductProminentImage-title{font-size: 18px; line-height: 1.3;}
+    .offercard a.HitchhikerCTA.js-HitchhikerCTA, .waytocard a.HitchhikerCTA.js-HitchhikerCTA{padding: 10px 15px;}
+    .offercard a.HitchhikerCTA.js-HitchhikerCTA{padding: 10px 15px;}
+    .yxt-QuestionSubmission-titleBar{padding: 10px;}
+    .HitchhikerFaqAccordion-toggle{padding: 10px;}
+    .yxt-QuestionSubmission-formRow{margin: 10px;}
+    .yxt-QuestionSubmission-formRow{margin: 10px;}
+    .yxt-QuestionSubmission-acknowledgementBar{padding: 10px;}
+    .yxt-NoResults{padding: 15px 0 0;}
+    .yxt-NoResults-suggestion{margin-left: 0;}
+    .yxt-AlternativeVerticals-suggestionsWrapper{padding: 10px;}
+
+    .AnswersVerticalGrid .Hitchhiker-3-columns .yxt-Card{margin-bottom: 15px; padding: 0 15px;}
+
+    .universal-result-list .HitchhikerLocationStandard-ctasWrapper{display: flex; justify-content: flex-start;}
+    .universal-result-list .HitchhikerLocationStandard-primaryCTA, .universal-result-list .HitchhikerLocationStandard-secondaryCTA{width: auto;}
+    .universal-result-list .HitchhikerLocationStandard-primaryCTA{margin-right: 10px;}
+    .universal-result-list .HitchhikerLocationStandard-primaryCTA .HitchhikerCTA-icon .Icon.Icon--chevron{margin-top: 0;}
+    .universal-result-list .HitchhikerLocationStandard .HitchhikerCTA{padding: 9px 15px;}
+
+    .applied-filter{padding-left: 0;}
+
+    .Answers-appliedFilters{padding: 0 15px;}
+
+    .HitchhikerFaqAccordion-details, .HitchhikerFaqAccordion-ctasWrapper{margin-left: 0; margin-right: 0; padding-left: 10px; padding-right: 10px;}
+.site-footer ul{ padding: 0;
+max-height: 0;
+overflow: hidden;
+transition: all 0.4s;
+
+display: inherit !important;}
+
+.site-footer ul.open{max-height: 600px!important; padding-top: 0px;}
+
+}
+@media only screen and (max-width:640px){
+    .location-filters .yxt-FilterOptions-options .multioption-option{width: 100%; margin: 3px 0;}
+}
+@media only screen and (max-width:374px){
+    .HitchhikerLocationStandard .HitchhikerCTA{padding: 9px 7px;}
+    .HitchhikerLocationStandard .HitchhikerCTA .HitchhikerCTA-iconWrapper{padding-right: 5px;}
+}
+
+
+

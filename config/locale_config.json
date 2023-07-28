@@ -1,0 +1,12 @@
+{
+  "default": "en_GB",
+  "localeConfig": {
+    "en_GB": {
+      "experienceKey": "away-resorts" //  the unique key of your search configuration for this locale
+    }
+  },
+  "urlFormat": {
+    "baseLocale": "{locale}/{pageName}.{pageExt}",
+    "default": "{pageName}.{pageExt}"
+  }
+}

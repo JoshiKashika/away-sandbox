@@ -1,0 +1,37 @@
+(item, config, marker) => {
+  const pinStyling = {
+    label: marker.label.toString() || '',
+    height: {{#if pin.height}}{{pin.height}}{{else}}26{{/if}},
+    width: {{#if pin.width}}{{pin.width}}{{else}}22{{/if}},
+    backgroundColor: '{{#if pin.backgroundColor}}{{pin.backgroundColor}}{{else if pin.default.backgroundColor}}{{pin.default.backgroundColor}}{{else}}#5387d7{{/if}}',
+    labelColor: '{{#if pin.labelColor}}{{pin.labelColor}}{{else if pin.default.labelColor}}{{pin.default.labelColor}}{{else}}white{{/if}}',
+    strokeColor: '{{#if pin.strokeColor}}{{pin.strokeColor}}{{else if pin.default.strokeColor}}{{pin.default.strokeColor}}{{else}}black{{/if}}',
+  }
+
+  const svg =
+    `<svg xmlns="http://www.w3.org/2000/svg" width="21" height="28" viewBox="0 0 21 28">
+  <g transform="translate(-998.43 -445)">
+    <path d="M9.421,27.435C1.475,15.915,0,14.733,0,10.5a10.5,10.5,0,0,1,21,0c0,4.233-1.475,5.416-9.421,16.935a1.313,1.313,0,0,1-2.158,0ZM10.5,14.875A4.375,4.375,0,1,0,6.125,10.5,4.375,4.375,0,0,0,10.5,14.875Z" transform="translate(998.43 445)" fill="#3cc0c8"/>
+    <path d="M7.709,0A7.709,7.709,0,1,1,0,7.709,7.709,7.709,0,0,1,7.709,0Z" transform="translate(1001.429 448)" fill="#00737a"/>
+  </g>
+</svg>`;
+
+  const mapProvider = '{{mapProvider}}'.trim().toLowerCase();
+  {{!-- Account for interface differences between GoogleMapProvider and MapboxMapProvider --}}
+  if (mapProvider === 'google') {
+    config.svg = svg;
+    {{!-- Don't use the sdk's built-in label for GoogleMapProvider --}}
+    config.label = '';
+    config.scaledSize = {
+      w: pinStyling.width,
+      h: pinStyling.height,
+    };
+  } else if (mapProvider === 'mapbox') {
+    const el = document.createElement('img');
+    el.src = `data:image/svg+xml;charset=utf-8, ${encodeURIComponent(svg)}`;
+    config.wrapper = el;
+  } else {
+    throw new Error('Unrecognized map provider: "' + mapProvider + '"');
+  }
+  return config;
+}

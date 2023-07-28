@@ -1,0 +1,340 @@
+.Answers-footer{
+  padding-bottom: 0;
+}
+.site-footer{
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+  padding: 2.5rem 0;
+  border-top: 2px solid #3cc0c8;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Jubilat';
+  @media screen and (max-width: 767px){
+    padding: 0 0 22px;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  .container{
+    display: block;
+    width: 100%;
+    max-width: 1344px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @media screen and (max-width: 767px){
+      max-width: 540px;
+    }
+    .foo-col{
+      width: 25%;
+      padding: 0 10px;
+      margin-bottom: 15px;
+      @media screen and (max-width: 767px){
+        width: 100%;
+        background: #fff;
+        margin-bottom: 0;
+      }
+      &.col-1{
+        width: 25%;
+        @media screen and (max-width: 767px){
+          width: 100%;
+          border-bottom: 2px solid #3cc0c8;
+        }
+      }
+      &.col-2{
+        width: 16.66%;
+        @media screen and (max-width: 1199px){
+          width: 25%;
+        }
+        @media screen and (max-width: 767px){
+          width: 100%;
+          border-bottom: 2px solid #3cc0c8;
+        }
+      }
+      &.col-3{
+        width: 16.66%;
+        @media screen and (max-width: 1199px){
+          width: 25%;
+        }
+        @media screen and (max-width: 767px){
+          width: 100%;
+          border-bottom: 2px solid #3cc0c8;
+        }
+      }
+      &.col-4{
+        width: 16.66%;
+        @media screen and (max-width: 1199px){
+          width: 25%;
+        }
+        @media screen and (max-width: 767px){
+          width: 100%;
+          border-bottom: 2px solid #3cc0c8;
+        }
+      }
+      &.col-auto{
+        width: auto;
+      }
+      &.review-site-logo{
+        width: 100%;
+        @media screen and (max-width: 767px){
+          margin-left: -10px;
+          margin-right: -10px;
+          width: auto;
+          padding: 0;
+        }
+      }
+      
+    }
+    .text-right{
+      text-align: right;
+      @media screen and (max-width: 767px){
+        text-align: center;
+      }
+    }
+  }
+  .social-link{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+    @media screen and (max-width: 767px){
+      justify-content: center;
+    }
+    a{
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #3cc0c8;
+      margin-right: 12px;
+      &:last-child{
+        margin-right: 0;
+      }
+      svg{
+        width: 26px;
+        height: 26px;
+        fill: #00737a;
+        &.icon-youtube{
+          height: 20px;
+        }
+        &.icon-facebook{
+          width: 26px;
+          height: 26px;
+        }
+        &.icon-twitter{
+          width: 26px;
+          height: 22px;
+        }
+        &.icon-instagram{
+          width: 26px;
+          height: 26px;
+        }
+      }
+      &:hover{
+        .icon-facebook{
+          fill: #1877f2;
+        }
+        .icon-twitter{
+          fill: #1da1f2;
+        }
+        .icon-instagram{
+          fill: #f00075;
+        }
+        .icon-youtube{
+          fill: red;
+        }
+      }
+    }
+  }
+  h5 {
+    margin: 0 0 25px;
+    display: block;
+    font-size: 16px;
+    position: relative;
+    font-family: 'Jubilat';
+    font-weight: 500;
+    color: #2e434e;
+    line-height: 20px;
+    @media screen and (min-width: 768px){
+      pointer-events: none;
+      cursor: default;
+    }
+    @media screen and (max-width: 767px){
+      margin: 0;
+      padding: 20px 30px 20px 0;
+      font-size: 1rem;
+      font-weight: 500;
+      position: relative;
+    }
+    .icon-plus{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      height: 2px;
+      width: 16px;
+      background-color: #00737a;
+      display: none;
+      transition: background-color .3s ease-in-out;
+      @media screen and (max-width: 767px){
+        display: block;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        left: calc(50% - 1px);
+        top: calc(50% - 8px);
+        height: 16px;
+        width: 2px;
+        background-color: #00737a;
+        transition: background-color .3s ease-in-out;
+      }
+    }
+  }
+  ul{
+    list-style: none;
+    padding: 0 0 8px;
+    @media screen and (max-width: 767px){
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.4s;
+    }
+    li{
+      padding: 0 0 13px 0;
+      a{
+        font-size: 16px;
+        font-family: 'Jubilat';
+        font-weight: normal;
+        line-height: 20px;
+        text-decoration: none;
+        color: #00737a;
+        &:hover{
+          text-decoration: none;
+          color: #000;
+        }
+        svg{
+          width: 16px;
+          vertical-align: middle;
+          fill: #c51442;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .active{
+    h5{
+      svg{
+        transform: rotate(180deg);
+      }
+    }
+    ul{
+      max-height: 600px;
+      padding-top: 0;
+    }
+  }
+  .logo-item {
+    display: inline-block;
+    vertical-align: top;
+    @media screen and (max-width: 767px){
+      margin: 8px 0 14px;
+      img {
+        max-width: 117px;
+        height: auto;
+      }
+    }
+  }
+  .logo-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid rgba(0,0,0,.1);
+    width: 100%;
+    padding-top: 25px;
+    @media screen and (max-width: 767px){
+      max-height: 100%;
+    }
+    li{
+      width: 16.66%;
+      padding: 0 10px;
+      text-align: center;
+      @media screen and (max-width: 991px){
+        width: 25%;
+      }
+      @media screen and (max-width: 767px){
+        width: 50%;
+      }
+    }
+  }
+  .phone-number{
+    font-size: 26px;
+    line-height: 30px;
+    padding: 10px 0 15px;
+    display: inline-block;
+    font-weight: normal;
+    width: 100%;
+    a{
+      color: #000;
+       &:hover{
+         color: #00737a;
+       }
+    }
+    @media screen and (max-width: 1199px){
+      text-align: center;
+    }
+    @media screen and (max-width: 767px){
+      font-size: 22px;
+      a{
+        color: #00737a;
+        &:hover{
+          color: #000;
+        }
+      }
+    }
+  }
+  .footer-content{
+    font-size: 14px;
+    font-weight: normal;
+    @media screen and (max-width: 767px){
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    h6{
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-family: 'Jubilat';
+    }
+    p{
+      margin-bottom: 10px;
+    }
+    .copyright{
+      font-size: 16px;
+      line-height: 20px;
+      @media screen and (max-width: 767px){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.trustpilot-widget{
+  margin-top: 25px;
+  max-width: 206px;
+  margin-bottom: 1.5625rem;
+  iframe{
+    width: 180px !important;
+    height: 100px !important;
+  }
+}
+.yxt-LocationBias{
+  @media screen and (max-width: 767px){
+    font-size: 14px;
+  }
+}
